@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="card red">
+            <h2>Team Builder</h2>
+            Lorem ipsum, dolor sit amet culpa iure facere suscipit! Volutable, facilis, libero apeiam
+            <img src="./imagem/icon-team-builder.svg" alt="img">
+        </div>
+        <div class="card orange">
+            <h2>Karma</h2>
+            Lorem ipsum, dolor sit amet culpa iure facere suscipit! Volutable, facilis, libero apeiam
+            <img src="./imagem/icon-karma.svg" alt="img">
+            </div>
+            <div class="card cyan">
+                <h2>Supervisor</h2>
+                Lorem ipsum, dolor sit amet culpa iure facere suscipit! Volutable, facilis, libero apeiam
+                <img src="./imagem/icon-Supervisor.svg" alt="img">
+                </div>
+                <div class="card blue">
+                    <h2>Calculator</h2>
+                    Lorem ipsum, dolor sit amet culpa iure facere suscipit! Volutable, facilis, libero apeiam
+                    <img src="./imagem/icon-calculator.svg" alt="img">
+                    </div>
+    </main>
+</body>
+</html>
+<style>
+    main{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        '. c2 .'
+        'c1 c2 c3'
+        'c1 c4 c3'
+        '. c4 .';~
+    }
+@media   (max-width:600px){
+    main{
+        grid-template-areas:
+        'c1'
+        'c2'
+        'c3'
+        'c4';
+    }
+}
+    .card{
+        width: 350px;
+        height: 250px;
+        padding: 50px;
+        border-top: solid 5px blue;
+        margin: 10px;
+    }
+    .card{
+        width: 350px;
+        height: 250px;
+        padding: 50px;
+        border-top: solid 5px blue;
+        margin: 10px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0, .5);
+        background-color: white;
+        text-align: justify;
+        font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .red{
+        border-top: solid 5px red;
+        grid-area: c2;
+    }
+    .orange{
+        border-top: solid 5px orange;
+        grid-area: c4;
+    }
+    .cyan{
+        border-top: solid 5px cyan;
+        grid-area: c1;
+    }
+    .blue{
+        border-top: solid 5px blue;
+        grid-area: c3;
+    }
+
+        body{
+        background-color: grey;
+
+    }
+    h2{
+        align-self: flex-start;
+        margin:0;
+    }
+
+
+
+            
+    
+
+
+
+
+
+
+
